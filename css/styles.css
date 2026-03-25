@@ -1,5 +1,5 @@
 :root {
-    --cian-fondo: #0085a5; 
+    --cian-fondo: #98e0f1; 
     --cian-claro: #e0f2f1;
     --blanco-puro: #ffffff;
     --gris-oscuro: #2c3e50;
@@ -7,14 +7,6 @@
     --sombra: 0 8px 30px rgba(0,0,0,0.1);
 }
 
-img {
-    display: block;    
-    margin-left: auto; 
-    margin-right: auto;
-    max-width: 100%;   
-    height: auto;      
-    border-radius: 12px; 
-}
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +33,76 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 15px rgba(0,0,0,0.3);
 }
+
+section {
+    background-color: var(--blanco-puro);
+}
+
+img {
+    display: block;    
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 100%;   
+    height: auto;      
+    border-radius: 12px; 
+}
+.sobre-nosotros {
+    display: flex;
+    align-items: right;
+    gap: 20px;
+    padding: 40px 5%;
+}
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cian-fondo);
+}
+
+
+
+/* ESTILOA PROPIOS */
+
+.sectionXL {
+    width: 100%;
+}
+
+.sectionPar {
+    background: #dfdfdf;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: auto;
+}
+
+.sectionInpar {
+    background: #dad7d7;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adaptable a móvil */
+    gap: 30px;
+    padding: 20px 0;
+}
+
+
+
+/* ---------------------------- ESTILOS INDEX ----------------------------------- */
+
+
+
+
+
+
+
+
+footer a:hover {
+    color: #007bff;    
+}
+
+
 
 nav ul {
     display: flex;
@@ -69,18 +131,11 @@ nav a.active {
 }
 
 
-section {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: var(--blanco-puro);
-    border-radius: 20px; 
-    box-shadow: var(--sombra);
-}
+
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     color: var(--cian-fondo);
     font-size: 2rem;
     position: relative;
@@ -101,12 +156,14 @@ h2::after {
 }
 
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adaptable a móvil */
-    gap: 30px;
-    padding: 20px 0;
+h3 {
+     text-align: center;
+    margin-bottom: 0px;
+    color: rgb(90, 230, 199);
+    font-size: 2rem;
+    position: relative;
 }
+
 
 .producto {
     border: none;
